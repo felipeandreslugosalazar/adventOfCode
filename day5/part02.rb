@@ -1,0 +1,570 @@
+instructions = "move 2 from 7 to 2
+move 1 from 4 to 8
+move 2 from 1 to 9
+move 4 from 6 to 5
+move 1 from 7 to 6
+move 2 from 1 to 4
+move 7 from 8 to 9
+move 7 from 4 to 5
+move 4 from 2 to 4
+move 1 from 5 to 9
+move 14 from 5 to 4
+move 1 from 3 to 8
+move 5 from 4 to 8
+move 1 from 2 to 5
+move 2 from 4 to 1
+move 6 from 8 to 1
+move 1 from 8 to 6
+move 1 from 2 to 5
+move 5 from 3 to 7
+move 2 from 6 to 3
+move 2 from 4 to 7
+move 3 from 3 to 9
+move 7 from 4 to 1
+move 1 from 6 to 9
+move 2 from 6 to 1
+move 3 from 5 to 2
+move 1 from 1 to 8
+move 21 from 9 to 1
+move 1 from 4 to 2
+move 7 from 7 to 2
+move 1 from 4 to 2
+move 23 from 1 to 5
+move 5 from 5 to 1
+move 1 from 3 to 6
+move 1 from 6 to 3
+move 12 from 1 to 6
+move 1 from 3 to 6
+move 2 from 1 to 8
+move 1 from 9 to 3
+move 2 from 8 to 1
+move 2 from 1 to 8
+move 1 from 1 to 3
+move 2 from 3 to 1
+move 2 from 8 to 1
+move 3 from 6 to 1
+move 1 from 8 to 7
+move 4 from 6 to 2
+move 3 from 6 to 9
+move 2 from 5 to 7
+move 2 from 7 to 8
+move 1 from 7 to 9
+move 9 from 1 to 5
+move 12 from 5 to 9
+move 1 from 8 to 6
+move 1 from 6 to 9
+move 1 from 6 to 9
+move 7 from 9 to 4
+move 10 from 2 to 1
+move 12 from 5 to 4
+move 7 from 4 to 9
+move 7 from 4 to 7
+move 1 from 5 to 4
+move 7 from 7 to 8
+move 1 from 6 to 3
+move 1 from 3 to 1
+move 3 from 2 to 4
+move 1 from 6 to 8
+move 7 from 1 to 2
+move 1 from 6 to 7
+move 12 from 9 to 4
+move 3 from 8 to 5
+move 1 from 7 to 3
+move 6 from 9 to 1
+move 10 from 1 to 9
+move 7 from 9 to 5
+move 3 from 9 to 5
+move 1 from 3 to 4
+move 2 from 2 to 1
+move 1 from 5 to 1
+move 9 from 4 to 3
+move 1 from 1 to 3
+move 8 from 4 to 7
+move 7 from 5 to 3
+move 2 from 7 to 2
+move 8 from 3 to 9
+move 1 from 1 to 8
+move 10 from 2 to 3
+move 4 from 8 to 7
+move 12 from 3 to 4
+move 9 from 7 to 2
+move 2 from 1 to 3
+move 1 from 9 to 6
+move 2 from 4 to 9
+move 1 from 7 to 6
+move 5 from 5 to 9
+move 8 from 3 to 1
+move 2 from 6 to 3
+move 14 from 4 to 3
+move 15 from 3 to 9
+move 1 from 3 to 1
+move 3 from 9 to 8
+move 1 from 8 to 1
+move 1 from 3 to 2
+move 5 from 2 to 8
+move 1 from 4 to 2
+move 2 from 1 to 3
+move 2 from 3 to 9
+move 3 from 2 to 4
+move 6 from 1 to 8
+move 2 from 2 to 6
+move 1 from 6 to 4
+move 2 from 4 to 7
+move 5 from 8 to 5
+move 1 from 6 to 9
+move 7 from 9 to 6
+move 1 from 5 to 3
+move 2 from 7 to 8
+move 2 from 2 to 4
+move 3 from 5 to 6
+move 1 from 3 to 8
+move 1 from 5 to 6
+move 2 from 4 to 1
+move 3 from 1 to 6
+move 21 from 9 to 5
+move 1 from 4 to 3
+move 1 from 4 to 9
+move 2 from 9 to 2
+move 1 from 3 to 9
+move 4 from 2 to 3
+move 3 from 8 to 1
+move 14 from 5 to 9
+move 7 from 5 to 4
+move 3 from 8 to 4
+move 4 from 3 to 2
+move 3 from 8 to 5
+move 1 from 2 to 3
+move 1 from 5 to 1
+move 2 from 5 to 4
+move 3 from 2 to 9
+move 11 from 4 to 1
+move 17 from 9 to 2
+move 17 from 2 to 9
+move 10 from 9 to 2
+move 2 from 8 to 2
+move 3 from 8 to 3
+move 8 from 9 to 7
+move 4 from 7 to 3
+move 2 from 3 to 2
+move 3 from 2 to 3
+move 9 from 3 to 5
+move 1 from 1 to 9
+move 8 from 5 to 1
+move 2 from 7 to 9
+move 24 from 1 to 3
+move 24 from 3 to 6
+move 1 from 5 to 3
+move 10 from 2 to 1
+move 1 from 4 to 5
+move 3 from 9 to 1
+move 1 from 3 to 5
+move 17 from 6 to 5
+move 1 from 7 to 4
+move 13 from 5 to 4
+move 3 from 5 to 8
+move 1 from 7 to 9
+move 3 from 6 to 9
+move 8 from 6 to 4
+move 1 from 9 to 6
+move 11 from 1 to 8
+move 1 from 5 to 6
+move 12 from 4 to 9
+move 2 from 5 to 1
+move 1 from 1 to 7
+move 5 from 9 to 2
+move 1 from 7 to 9
+move 3 from 1 to 5
+move 3 from 5 to 9
+move 7 from 9 to 3
+move 4 from 9 to 6
+move 3 from 6 to 8
+move 5 from 4 to 3
+move 2 from 2 to 6
+move 3 from 9 to 3
+move 3 from 6 to 4
+move 4 from 2 to 6
+move 11 from 3 to 5
+move 11 from 6 to 9
+move 2 from 3 to 5
+move 1 from 5 to 8
+move 3 from 6 to 2
+move 7 from 9 to 2
+move 8 from 5 to 7
+move 6 from 4 to 5
+move 2 from 4 to 3
+move 1 from 8 to 6
+move 4 from 8 to 3
+move 13 from 8 to 3
+move 1 from 9 to 5
+move 6 from 7 to 2
+move 1 from 7 to 6
+move 1 from 6 to 5
+move 2 from 6 to 7
+move 13 from 3 to 5
+move 6 from 2 to 7
+move 1 from 6 to 1
+move 1 from 2 to 8
+move 2 from 7 to 8
+move 14 from 5 to 8
+move 1 from 1 to 4
+move 9 from 2 to 1
+move 14 from 8 to 7
+move 3 from 3 to 9
+move 11 from 5 to 3
+move 1 from 4 to 5
+move 4 from 9 to 8
+move 4 from 8 to 7
+move 5 from 3 to 9
+move 11 from 7 to 8
+move 9 from 1 to 3
+move 4 from 3 to 2
+move 6 from 8 to 4
+move 2 from 8 to 2
+move 13 from 3 to 6
+move 1 from 4 to 1
+move 5 from 4 to 2
+move 10 from 2 to 6
+move 4 from 9 to 1
+move 8 from 7 to 8
+move 10 from 8 to 5
+move 2 from 3 to 2
+move 2 from 8 to 6
+move 1 from 7 to 1
+move 2 from 7 to 6
+move 2 from 2 to 9
+move 2 from 8 to 6
+move 6 from 1 to 7
+move 5 from 9 to 1
+move 4 from 7 to 8
+move 1 from 7 to 2
+move 2 from 1 to 7
+move 1 from 3 to 8
+move 1 from 1 to 6
+move 2 from 2 to 6
+move 1 from 7 to 8
+move 1 from 1 to 9
+move 8 from 5 to 7
+move 2 from 7 to 9
+move 9 from 6 to 3
+move 13 from 6 to 8
+move 3 from 9 to 1
+move 5 from 6 to 1
+move 3 from 8 to 1
+move 3 from 3 to 4
+move 1 from 4 to 3
+move 1 from 4 to 8
+move 4 from 6 to 3
+move 11 from 8 to 2
+move 1 from 6 to 9
+move 8 from 3 to 9
+move 3 from 5 to 8
+move 4 from 1 to 2
+move 6 from 8 to 5
+move 6 from 5 to 1
+move 5 from 1 to 3
+move 3 from 3 to 4
+move 3 from 8 to 4
+move 2 from 4 to 5
+move 10 from 7 to 8
+move 5 from 9 to 2
+move 1 from 7 to 5
+move 3 from 5 to 2
+move 4 from 9 to 3
+move 4 from 1 to 5
+move 1 from 3 to 2
+move 3 from 5 to 2
+move 6 from 2 to 5
+move 10 from 8 to 3
+move 4 from 4 to 5
+move 4 from 2 to 8
+move 12 from 3 to 8
+move 1 from 1 to 3
+move 9 from 8 to 6
+move 1 from 4 to 1
+move 6 from 8 to 7
+move 3 from 1 to 7
+move 9 from 5 to 7
+move 11 from 7 to 2
+move 2 from 7 to 3
+move 9 from 2 to 7
+move 1 from 8 to 7
+move 1 from 5 to 2
+move 2 from 6 to 2
+move 2 from 1 to 2
+move 6 from 3 to 5
+move 2 from 3 to 6
+move 4 from 7 to 3
+move 3 from 3 to 1
+move 2 from 1 to 5
+move 7 from 7 to 6
+move 1 from 1 to 5
+move 3 from 2 to 4
+move 1 from 3 to 2
+move 18 from 2 to 1
+move 4 from 2 to 7
+move 6 from 5 to 9
+move 1 from 4 to 8
+move 2 from 6 to 1
+move 19 from 1 to 2
+move 4 from 9 to 5
+move 5 from 7 to 2
+move 1 from 8 to 7
+move 1 from 1 to 2
+move 6 from 5 to 7
+move 1 from 3 to 8
+move 6 from 7 to 6
+move 1 from 4 to 1
+move 4 from 7 to 9
+move 1 from 1 to 3
+move 1 from 2 to 5
+move 1 from 4 to 8
+move 1 from 3 to 4
+move 3 from 5 to 4
+move 2 from 8 to 9
+move 9 from 2 to 4
+move 19 from 6 to 4
+move 1 from 4 to 7
+move 5 from 9 to 5
+move 10 from 2 to 9
+move 2 from 5 to 4
+move 14 from 4 to 7
+move 2 from 2 to 1
+move 3 from 9 to 1
+move 1 from 1 to 3
+move 13 from 7 to 6
+move 1 from 5 to 9
+move 1 from 6 to 9
+move 1 from 7 to 2
+move 5 from 9 to 7
+move 1 from 5 to 2
+move 3 from 7 to 3
+move 3 from 4 to 9
+move 1 from 5 to 2
+move 4 from 4 to 2
+move 2 from 7 to 3
+move 4 from 1 to 6
+move 1 from 7 to 9
+move 11 from 9 to 5
+move 8 from 2 to 9
+move 6 from 9 to 6
+move 8 from 4 to 5
+move 14 from 5 to 6
+move 1 from 5 to 4
+move 3 from 5 to 1
+move 1 from 5 to 2
+move 2 from 6 to 4
+move 2 from 4 to 2
+move 1 from 9 to 2
+move 1 from 2 to 3
+move 1 from 9 to 3
+move 3 from 2 to 7
+move 7 from 6 to 7
+move 5 from 4 to 3
+move 23 from 6 to 1
+move 5 from 7 to 2
+move 22 from 1 to 6
+move 6 from 6 to 3
+move 6 from 2 to 4
+move 6 from 4 to 1
+move 3 from 7 to 8
+move 3 from 1 to 8
+move 4 from 3 to 2
+move 1 from 1 to 3
+move 3 from 3 to 1
+move 1 from 7 to 5
+move 1 from 6 to 5
+move 1 from 7 to 4
+move 4 from 6 to 9
+move 5 from 3 to 6
+move 2 from 2 to 1
+move 3 from 9 to 4
+move 11 from 1 to 9
+move 2 from 4 to 7
+move 4 from 6 to 1
+move 1 from 5 to 4
+move 5 from 8 to 9
+move 1 from 7 to 1
+move 3 from 2 to 7
+move 4 from 1 to 2
+move 3 from 4 to 2
+move 1 from 8 to 5
+move 1 from 5 to 4
+move 1 from 5 to 4
+move 5 from 6 to 1
+move 3 from 7 to 6
+move 5 from 2 to 8
+move 15 from 9 to 2
+move 1 from 3 to 9
+move 10 from 6 to 8
+move 1 from 4 to 9
+move 1 from 8 to 3
+move 1 from 4 to 6
+move 4 from 6 to 3
+move 2 from 9 to 7
+move 1 from 7 to 6
+move 1 from 1 to 6
+move 3 from 3 to 8
+move 2 from 7 to 8
+move 3 from 8 to 4
+move 12 from 2 to 9
+move 14 from 9 to 5
+move 12 from 8 to 2
+move 1 from 6 to 7
+move 8 from 3 to 1
+move 2 from 4 to 6
+move 1 from 3 to 6
+move 5 from 6 to 1
+move 17 from 1 to 2
+move 29 from 2 to 1
+move 1 from 8 to 5
+move 1 from 4 to 3
+move 1 from 8 to 5
+move 1 from 8 to 7
+move 5 from 2 to 1
+move 1 from 3 to 5
+move 1 from 6 to 4
+move 6 from 5 to 8
+move 1 from 4 to 9
+move 1 from 7 to 2
+move 1 from 2 to 6
+move 7 from 8 to 7
+move 1 from 6 to 9
+move 2 from 9 to 2
+move 2 from 2 to 8
+move 15 from 1 to 2
+move 2 from 8 to 3
+move 9 from 1 to 2
+move 24 from 2 to 7
+move 11 from 1 to 2
+move 1 from 3 to 1
+move 22 from 7 to 6
+move 6 from 5 to 2
+move 2 from 6 to 5
+move 1 from 1 to 9
+move 1 from 9 to 6
+move 6 from 5 to 1
+move 12 from 6 to 2
+move 3 from 1 to 5
+move 1 from 3 to 2
+move 25 from 2 to 6
+move 4 from 7 to 5
+move 8 from 5 to 4
+move 4 from 4 to 8
+move 1 from 1 to 8
+move 5 from 8 to 4
+move 4 from 4 to 1
+move 2 from 1 to 9
+move 20 from 6 to 8
+move 4 from 2 to 6
+move 19 from 8 to 7
+move 2 from 9 to 3
+move 1 from 8 to 2
+move 11 from 6 to 7
+move 3 from 1 to 2
+move 5 from 4 to 3
+move 1 from 1 to 3
+move 1 from 3 to 5
+move 2 from 2 to 8
+move 33 from 7 to 3
+move 1 from 5 to 3
+move 1 from 8 to 7
+move 1 from 7 to 4
+move 5 from 6 to 8
+move 2 from 7 to 6
+move 2 from 2 to 3
+move 1 from 2 to 5
+move 1 from 7 to 9
+move 1 from 5 to 7
+move 1 from 8 to 2
+move 1 from 4 to 3
+move 43 from 3 to 7
+move 1 from 3 to 8
+move 1 from 6 to 8
+move 8 from 7 to 5
+move 3 from 5 to 3
+move 1 from 6 to 4
+move 2 from 6 to 7
+move 4 from 8 to 7
+move 3 from 3 to 2
+move 1 from 9 to 6
+move 3 from 8 to 3
+move 1 from 6 to 7
+move 1 from 4 to 6
+move 1 from 3 to 7
+move 1 from 3 to 2
+move 5 from 2 to 5
+move 1 from 6 to 1
+move 1 from 3 to 2
+move 42 from 7 to 5
+move 44 from 5 to 4
+move 2 from 5 to 8
+move 1 from 7 to 3
+move 16 from 4 to 6
+move 3 from 5 to 9"
+
+instructions = instructions
+  .gsub!(/[a-z\n]/, "")
+  .split(" ")
+# map to integers
+  .map! { |e| e.to_i }
+# group by 3
+  .each_slice(3).map { |e| e }
+
+print "instructions => "
+p instructions
+
+print "stacks => "
+p stacks = [
+  ["H", "T", "Z", "D"],
+  ["Q", "R", "W", "T", "G", "C", "S"],
+  ["P", "B", "F", "Q", "N", "R", "C", "H"],
+  ["L", "C", "N", "F", "H", "Z"],
+  ["G", "L", "F", "Q", "S"],
+  ["V", "P", "W", "Z", "B", "R", "C", "S"],
+  ["Z", "F", "J"],
+  ["D", "L", "V", "Z", "R", "H", "Q"],
+  ["B", "H", "G", "N", "F", "Z", "L", "D"],
+]
+
+instructions.each do |instruction|
+  number_of_crates = instruction[0]
+  from = instruction[1] - 1
+  to = instruction[2] - 1
+
+  crane = []
+
+  # number of crates to move
+  if number_of_crates == 1
+    # TAKE from
+    crane << stacks[from].last
+    # move from
+    stacks[from].pop
+    # move to
+    stacks[to].push(crane.last)
+    crane.pop
+  else
+    number_of_crates.times do
+      crane << stacks[from].last
+      # REmove it from old stack
+      stacks[from].pop
+      # move it to new stack
+      # print "into crane => "
+      # p crane
+    end
+    number_of_crates.times do
+      stacks[to].push(crane.last)
+      crane.pop
+    end
+    crane = []
+  end
+  # pp stacks
+end
+
+print "final => "
+pp stacks
+
+stacks.map! do |stack|
+  stack.last
+end
+
+p stacks.join
