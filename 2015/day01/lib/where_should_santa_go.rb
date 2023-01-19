@@ -8,12 +8,14 @@ def where_should_santa_go(input)
   input = input.split("")
   # # start at ground floor
   sum = 0
-  input.each_with_index do |step, i|
+  input.each do |instruction|
     #   # An opening parenthesis, (, means he should go up one floor => +1
     #   # a closing parenthesis, ), means he should go down one floor. => -1
-    direction = (step == "(" ? 1 : -1)
+    direction = (instruction == "(" ? 1 : -1)
     sum = sum + direction
   end
-  # puts "To what floor do the instructions take Santa? " + sum.to_s
   sum
 end
+
+# =>
+puts "To what floor do the instructions take Santa? " + where_should_santa_go(@instructions).to_s
