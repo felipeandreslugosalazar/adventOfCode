@@ -1,8 +1,9 @@
 require "colorize"
+
 # It contains at least three vowels (aeiou only)
 # => aei, xazegov, or aeiouaeiouaeiou
 def it_contains_at_least_3_vowels(string)
-  string.match?(/[a-z]{3,}/)
+  string.gsub(/[^aeiuo]/, "").split("").count >= 3
 end
 
 # p it_contains_at_least_3_vowels("aei")
@@ -38,14 +39,23 @@ end
 # p at_least_one_letter_twice_in_a_row("asdfghjk")
 # p at_least_one_letter_twice_in_a_row("arabbccdd")
 
-# It does not contain the strings 
+# It does NOT contain the strings
 # ab,
 # cd,
 # pq,
 # xy,
 
 #  even if they are part of one of the other requirements.
+def it_doesnt_contain_ab_cd_pq_xy?(string)
+  !contain = string.match?(/(ab|cd|pq|xy)/)
+end
 
-p  "ddddddddddalbdddddddddd".match?(/(ab|cd|pq|xy)/)
-p  "ab".match?(/(ab|cd|pq|xy)/)
-p  "acdb".match?(/(ab|cd|pq|xy)/)
+# p it_doesnt_contain_ab_cd_pq_xy?("ddddddddddalbdddddddddd")
+# p it_doesnt_contain_ab_cd_pq_xy?("ab")
+# p it_doesnt_contain_ab_cd_pq_xy?("acdb")
+
+def is_string_nice?(input_string)
+  it_contains_at_least_3_vowels(input_string) &&
+  at_least_one_letter_twice_in_a_row(input_string) &&
+  it_doesnt_contain_ab_cd_pq_xy?(input_string)
+end
