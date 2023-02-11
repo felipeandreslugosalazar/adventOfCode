@@ -299,14 +299,6 @@ toggle 424,675 through 740,862
 toggle 580,592 through 671,900
 toggle 296,687 through 906,775"
 
-# @instructions_for_the_ideal_lighting_configuration = "turn off 660,55 through 986,197
-# turn off 341,304 through 638,850
-# turn off 199,133 through 461,193
-# toggle 322,558 through 977,958
-# toggle 537,781 through 687,941
-# turn on 226,196 through 599,390
-# turn off 697,981 through 709,986"
-
 # p @instructions_for_the_ideal_lighting_configuration.split("\n")
 @instructions_for_the_ideal_lighting_configuration = @instructions_for_the_ideal_lighting_configuration
   .gsub!("\n", " ")
@@ -319,3 +311,18 @@ toggle 296,687 through 906,775"
   .map! { |e| e.to_i }
   .each_slice(5)
   .map { |e| e }
+
+# @a = @instructions_for_the_ideal_lighting_configuration = @instructions_for_the_ideal_lighting_configuration.slice(0, 4)
+
+# @a.each do |sub_array|
+#   # p sub_array.first
+#   sub_array.map! do |e|
+#     if e == sub_array.first
+#       e
+#     else
+#       e / 100
+#     end
+#   end
+# end
+
+# p @instructions_for_the_ideal_lighting_configuration = @a
