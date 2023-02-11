@@ -180,3 +180,13 @@ end
 # @grid_5x5.print_status
 
 # @grid.number_of_lights_on
+
+def percentage_completed(array, iteration)
+  @percentage = (100.to_f / (array.length.to_f)).round(2)
+  print "\e[2J\e[f"
+  print "\r#{@percentage * iteration}" + "% completed"
+  # sleep(0.5)
+  print "\e[2J\e[f" if iteration + 1 >= array.length
+  print "\r100% completed" if iteration + 1 >= array.length
+  puts
+end
