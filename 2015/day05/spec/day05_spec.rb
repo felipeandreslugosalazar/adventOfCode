@@ -114,4 +114,81 @@ describe "--- Day 5: Doesn't He Have Intern-Elves For This? ---" do
       end
     end
   end
+
+  context "Part 02 - How many strings are nice? --- NEW RULZ ---" do
+    context "It contains a pair of any two letters that appears at least twice in the string without overlapping" do
+      context "TRUE" do
+        # It contains a pair of any two letters that appears at least twice in the string without overlapping
+        # TRUE
+        it "'xyxy' contains a pair of any two letters ..." do
+          # like xyxy (xy)
+          expect(overlap_of_3?("xyxy")).to be false
+          expect(it_contains_a_pair_of_any_two_letters_that_appears_at_least_twice?("xyxy")).to be true
+        end
+        it "'aabcdefgaa' contains a pair of any two letters ..." do
+          # aabcdefgaa (aa)
+          expect(overlap_of_3?("xyxy")).to be false
+          expect(it_contains_a_pair_of_any_two_letters_that_appears_at_least_twice?("aabcdefgaa")).to be true
+        end
+      end
+      context "FALSE" do
+        # BUT not like aaa (aa, but it overlaps).
+        it "'aaa' DOES contains a pair of any two letters ... BUT IT OVERLAPS" do
+          # aabcdefgaa (aa)
+          expect(overlap_of_3?("aaa")).to be true
+          expect(it_contains_a_pair_of_any_two_letters_that_appears_at_least_twice?("aaa")).to be true
+        end
+      end
+    end
+
+    context "It contains at least one letter which repeats with exactly one letter between them" do
+      context "TRUE" do
+        it "'xyx' contains at least one letter which repeats with exactly one letter between them" do
+          expect(it_contains_at_least_one_letter_which_repeats_with_exactly_one_letter_between_them?("xyx")).to be true
+        end
+        it "'abcdefeghi' contains at least one letter which repeats with exactly one letter between them" do
+          expect(it_contains_at_least_one_letter_which_repeats_with_exactly_one_letter_between_them?("abcdefeghi")).to be true
+        end
+      end
+      context "FALSE" do
+        it "'xdyx' does NOT contains at least one letter which repeats with exactly one letter between them" do
+          expect(it_contains_at_least_one_letter_which_repeats_with_exactly_one_letter_between_them?("xdyx")).to be false
+        end
+        it "'abcdeffeghi' does NOT contain at least one letter which repeats with exactly one letter between them" do
+          expect(it_contains_at_least_one_letter_which_repeats_with_exactly_one_letter_between_them?("abcdeffeghi")).to be false
+        end
+      end
+    end
+
+    context "Which strings are nice or naughty ? --- NEW RULZ ---" do
+
+      # qjhvhtzxzqqjkmpb is nice
+      #   because is has a pair that appears twice (qj)
+      #   and a letter that repeats with exactly one letter between them (zxz).
+      it "'qjhvhtzxzqqjkmpb' is nice" do
+        expect(is_string_nice_new_rulz?("qjhvhtzxzqqjkmpb")).to be true
+      end
+
+      # xxyxx is nice
+      #   because it has a pair that appears twice
+      #   and a letter that repeats with one between, even though the letters used by each rule overlap.
+      it "'xxyxx' is nice" do
+        expect(is_string_nice_new_rulz?("xxyxx")).to be true
+      end
+
+      # uurcxstgmygtbstg is naughty
+      #   because it has a pair (tg)
+      #   but no repeat with a single letter between them.
+      it "'uurcxstgmygtbstg' is naughty" do
+        expect(is_string_nice_new_rulz?("uurcxstgmygtbstg")).to be false
+      end
+
+      # ieodomkazucvgmuy is naughty
+      #   because it has a repeating letter with one between (odo),
+      #   but no pair that appears twice.
+      it "'ieodomkazucvgmuy' is naughty" do
+        expect(is_string_nice_new_rulz?("ieodomkazucvgmuy")).to be false
+      end
+    end
+  end
 end
