@@ -52,7 +52,9 @@ def part_2(var)
     .map! { |e| !e.to_i.zero? ? e : WORD_DIC_REVERSE[e] }
     .map! { |e| e.to_i }
 
-  first_digits.zip(last_digits).map! { |e| e.join.to_i }
+  first_digits
+    .zip(last_digits)
+    .map! { |e| e.join.to_i }
     .sum
 end
 
