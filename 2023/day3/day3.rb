@@ -13,15 +13,13 @@ test_var_part_1 = "467..114..
 ...$.*....
 .664.598.
 "
-# puts test_var_part_1 = "467.
-# ...*
-# ..35
-# ...$
-# "
 
 def part_1(input)
+  puts "input".upcase
+  puts
   puts input
   puts
+
   symbols = input
     .gsub("\n", "")
     .gsub(".", "")
@@ -33,7 +31,9 @@ def part_1(input)
   puts
 
   # PRIMERO QUE TODO NECESITAMOS UNA MATRIZ XY O IJ
-  # DONDE CADA ELEMENTO TENGA  UN VALOR EN 2D
+  # DONDE CADA ELEMENTO TENGA UN VALOR EN 2D
+  # PARA UN ELEMENTO "4" x=0 y=0 // 1er elemento del arreglo bidimensional
+
   matrix_hash = {}
   matrix =
     input
@@ -48,30 +48,27 @@ def part_1(input)
       end
     end
 
-  # p matrix_hash
-  # .first(15)
+  matrix_hash
+    .first(10)
 
-  # p x_first = matrix_hash.to_a.first
-  # print "X_first = "
-  # p x_first = matrix_hash.to_a.first.first.split(",").first.to_i
-  # print "Y_first = "
-  # p y_first = matrix_hash.to_a.first.first.split(",").last.to_i
+  x_first = matrix_hash.to_a.first
+  puts "X_first = " + x_first = matrix_hash.to_a.first.first.split(",").first.to_i.to_s
+  puts "Y_first = " + y_first = matrix_hash.to_a.first.first.split(",").last.to_i.to_s
 
-  # p x_last = matrix_hash.to_a.last
-  # print "X_last = "
-  # p x_last = matrix_hash.to_a.last.first.split(",").first.to_i
-  # print "Y_last = "
-  # p y_last = matrix_hash.to_a.last.first.split(",").last.to_i
-  # matrix_size = "#{y_last + 1},#{x_last + 1}"
-  # p "matrix_size(y,x) = #{matrix_size.gsub(",", "x")}"
+  x_last = matrix_hash.to_a.last
+  puts "X_last = " + x_last = matrix_hash.to_a.last.first.split(",").first.to_i.to_s
+  puts "Y_last = " + y_last = matrix_hash.to_a.last.first.split(",").last.to_i.to_s
+
+  matrix_size = "#{y_last.to_i + 1},#{x_last.to_i + 1}"
+  puts "matrix_size(y,x) = #{matrix_size.gsub(",", "x")}"
 
   # =================================================================
   # MATRIX RECONSTRUCTION
   # puts
   # puts
-  # (0..y_last).to_a.each do |x|
+  # (0..y_last.to_i).to_a.each do |x|
   #   # puts x
-  #   (0..x_last).to_a.each do |y|
+  #   (0..x_last.to_i).to_a.each do |y|
   #     # print y
   #     # print " | "
   #     #     # print "| #{x},#{y} => ".green
@@ -84,35 +81,55 @@ def part_1(input)
   # end
   # puts
   # puts
-  # =================================================================
 
   candidate_numbers = []
+  candidate_numbers_hash = {}
   temp_num_coor = []
+  temp_array = []
+
+  p mark = 0
   matrix_hash
+    .first(9)
   # empezamos recorriendo los datos uno a uno
-  # podemos "filtrar" valores que son numero y lo que no
-    .first(20)
     .each do |key, value|
     puts "===============================================".green
-    sleep(0.4)
-    index = 0
-    temp_array = [[], []]
+
+    # podemos "filtrar" valores que son numero y lo que no
+
     # si el dato es un numero:
-    if value.to_i != 0
-      # seguimos hasta que el dato siguiente no sea numero
-      # almacenamos los numeros encontrados
-      # hacemos los # indivuales uno solo
-      temp_array[index][0] << key
-      temp_array[index][1] << value
-      # p "#{key}=>#{value}"
-      # sleep(0.3)
+    puts "mark = #{mark}"
+    puts "#{key} ==> #{value}"
+
+    if value.class == Integer
+      puts "num"
+         # almacenamos los numeros encontrados
+         # hacemos los # indivuales uno solo
+      # temp_array[mark] << key
+      p temp_array << value.to_i
+      p temp_num_coor << key
+      # "SEGUIMOS HASTA QUE EL DATO SIGUIENTE NO SEA NUMERO"
     else
-      candidate_numbers << temp_array
-      temp_array = [[], []]
-      index += 1
+      mark += 1
+      puts "string"
+      puts "todoJunto = #{temp_array.join}"
+
+      if temp_array != ""
+        p candidate_numbers << temp_array.join
+        p candidate_numbers_hash[mark] = { num: temp_array.join, coor: temp_num_coor }
+        puts temp_array = []
+        puts temp_num_coor = []
+      end
     end
-    p temp_array
   end
+  candidate_numbers.select! { |num| num != "" }
+
+  puts "candidate_numbers = #{candidate_numbers}"
+  puts "candidate_numbers_hash = #{candidate_numbers_hash}"
+
+  # =================================================================
+  # raise "This is just a RAISE to stop execution".upcase
+  # =================================================================
+
   # processamos indices -> buscamos por cada numero sus datos vecinos
   # ACA TENDREMOS UNA SUBRUTINA DE BUSQUEDA DE VECINOS
   # CONSIDERANDO QUE EL NUMERO SEA ESQUINA BORDE O RODEADO
