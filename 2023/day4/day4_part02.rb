@@ -28,7 +28,7 @@ def day_4_part_2(input)
     .each.with_index do |line, index| # here we traverse the big array
     # puts "card = #{index + 1} --> #{line}".green
 
-    # define vars for the arrya line
+    # define vars for the array line
     @winning = line[0]
     # print "my numbers = ".yellow
     @my_numbers = line[1]
@@ -52,37 +52,24 @@ def day_4_part_2(input)
   puts "# => [card number, number of winnings]".green
   pp card_and_num_of_winnings
 
-  # at this point we have the numbers in a integer class
+  final_count = {}
 
-  # the first for the winner numbers
-  # the second for the numbers i got to participate
-
-  # .map! do |winning, my_numbers|
-  # my_numbers.select! do |number|
-  #   winning.include?(number)
-  # end
-  # [["83", "86", "17", "48"], ["61", "32"], ["21", "1"], ["84"], [], []]
-  #   .map! do |elements|
-  #   elements.length
-  # end
-  #   .select! do |array_length|
-  #   array_length > 0
-  # end
-  # #### [4, 2, 2, 1, 0, 0]
-  # #### [4, 2, 2, 1]
-  # # here we need to apply score
-  #   .map! do |array_length|
-  #   score = 0
-
-  #   if array_length == 1
-  #     score = 1
-  #   elsif array_length >= 2
-  #     score += 2 ** (array_length - 1)
-  #   else
-  #     score = 0
-  #   end
-  # end
-  #   .sum
+  puts "# => [card number, number of instances]".green
+  card_and_num_of_winnings.each do |car_num, wins|
+    if !final_count.has_key?(car_num)
+      # if final count doesnt have the car_num already
+      # add the original scratchcard to the count
+      final_count[car_num] = 1
+      #  now lets process the winnins
+      # wins = 4
+      if !wins.zero?
+        p (car_num + 1..car_num + wins).to_a.each do |copy|
+          final_count[copy] += 1
+        end
+      end
+    end
+  end
+  pp final_count
 end
 
 day_4_part_2(test_input)
