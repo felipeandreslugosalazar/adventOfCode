@@ -22,7 +22,7 @@ def day_4_part_2(input)
 
   # raise
   #process data to have [card number,number of winnings]
-  p card_number_and_winnings(@input)
+  pp card_number_and_winnings(@input)
   puts
 
   p first_count(@card_and_num_of_winnings)
@@ -32,8 +32,8 @@ def day_4_part_2(input)
   puts
 
   p sum(@count)
-  puts
+  # puts
 end
 
-day_4_part_2(test_input)
-# day_4_part_2(INPUT)
+# day_4_part_2(test_input)
+day_4_part_2(INPUT)

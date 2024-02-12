@@ -10,8 +10,7 @@ def raw_data_to_array_of_numbers(input)
 
   @input = @input
     .split("\n")
-  # .first(10)
-    .map! { |card| card.gsub(/Card.\d: /, "") }
+    .map! { |card| card.gsub(/Card.+\d: /, "") }
     .map! { |card| card.split("|") }
     .map! { |winning, my_numbers| [winning.split, my_numbers.split] }
     .each do |winning, my_numbers|
@@ -71,11 +70,11 @@ def first_count(input)
       @count[card_num] = 1
     end
   end
-  p @count
+  @count
 end
 
 def final_count(input)
-  puts "# Final count".green
+  puts "# Final count".upcase.green
 
   @input = input
   # puts "# => [card number, number of instances] # 2".green
@@ -111,7 +110,8 @@ def final_count(input)
         # print "@count[#{win}] = "
         # p @count[win]
 
-        @count[win] = 1 if @count[win].nil?
+        # counters for card that dont exist already must be set to 0
+        @count[win] = 0 if @count[win].nil?
 
         @count[win] += @count[card_num]
         # puts "------------------------------------  ".magenta
@@ -122,7 +122,7 @@ def final_count(input)
       puts "------------------------------------  ".yellow
     end
   end
-  # puts "------------------------------------  ".yellow
+  puts "------------------------------------  ".yellow
   @count
 end
 
