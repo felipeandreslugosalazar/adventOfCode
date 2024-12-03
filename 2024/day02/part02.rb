@@ -1,4 +1,5 @@
 require_relative "helper"
+require_relative "helper2"
 
 #set the input
 # file_path = ("./input_example.txt") # EXAMPLE
@@ -22,8 +23,22 @@ end
   end
 end
 
-@document.map! do |report|
-  isReportsafe?(report) == true ? 1 : 0
+# p @document
+@new_document = []
+
+# puts "**************************************".green
+@document.each do |report|
+
+  # problem_dampener(report)
+  @report = report
+
+  if isReportsafe?(@report)
+    @new_document << @report
+  else
+    # puts "UNSAFE"
+    problem_dampener(@report)
+  end
+  # puts "**************************************".green
 end
 
-puts @document.sum
+p @new_document.count

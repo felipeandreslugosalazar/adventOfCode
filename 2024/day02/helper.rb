@@ -37,7 +37,9 @@ end
 
 def isReportsafe?(report)
   safe = (decreasing?(report) || increasing?(report)) && levelsDifferByAtLeast1orAtMost3(report)
-  return safe == true ? 1 : 0
+  # 1 for safe
+  # 0 for unsafe
+  return safe == true ? true : false
 end
 
 # p decreasing?([7, 6, 4, 2, 1])
